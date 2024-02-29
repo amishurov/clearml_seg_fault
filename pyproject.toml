@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "clearml-seg-fault"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.mypy]
+files = ["run.py", "tests"]
+
+
+
+[[tool.mypy.overrides]]
+module = [
+    "clearml.*",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+clearml = "^1.14.4"
+mypy = "0.910"
+pytest = "^8.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
