@@ -20,7 +20,7 @@ testpaths = "tests"
 [tool.poetry.dependencies]
 python = "^3.8"
 clearml = "^1.14.4"
-mypy = "0.910"
+mypy = "1.8.0"
 pytest = "^8.0.2"
 
 
